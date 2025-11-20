@@ -3,4 +3,4 @@
     image: roomreservation
     build:
       context: .
-      dockerfile: RoomReservation/Dockerfile
+      dockerfile: src/RoomReservation.API/Dockerfile
