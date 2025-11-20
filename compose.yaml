@@ -1,0 +1,6 @@
+﻿services:
+  roomreservation:
+    image: roomreservation
+    build:
+      context: .
+      dockerfile: RoomReservation/Dockerfile
