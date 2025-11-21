@@ -40,7 +40,7 @@ COPY . .
 WORKDIR "/src/RoomReservation.API"
 #RUN dotnet restore
 
-RUN dotnet restore "RoomReservation.csproj"
+RUN dotnet restore "RoomReservation.API.csproj"
 
 # Build
 RUN dotnet build -c $BUILD_CONFIGURATION -o /app/build
