@@ -4,9 +4,6 @@
 #    build:
 #      context: .
 #      dockerfile: src/RoomReservation.API/Dockerfile
-
-version: '3.8'
-
 services:
   api:
     build:

@@ -24,6 +24,7 @@
 
 
 # V2
+# BASE DIR -> compose
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
 EXPOSE 8080
@@ -34,15 +35,15 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copia apenas os csproj (cache friendly)
-COPY RoomReservation.API/RoomReservation.API.csproj RoomReservation.API/
-COPY RoomReservation.Application/RoomReservation.Application.csproj RoomReservation.Application/
-COPY RoomReservation.Infrastructure/RoomReservation.Infrastructure.csproj RoomReservation.Infrastructure/
-COPY RoomReservation.Domain/RoomReservation.Domain.csproj RoomReservation.Domain/
+COPY src/RoomReservation.API/RoomReservation.API.csproj RoomReservation.API/
+COPY src/RoomReservation.Application/RoomReservation.Application.csproj RoomReservation.Application/
+COPY src/RoomReservation.Infrastructure/RoomReservation.Infrastructure.csproj RoomReservation.Infrastructure/
+COPY src/RoomReservation.Domain/RoomReservation.Domain.csproj RoomReservation.Domain/
 
 RUN dotnet restore "RoomReservation.API/RoomReservation.API.csproj"
 
 # Copia o resto
-COPY . .
+COPY src/ .
 
 WORKDIR "/src/RoomReservation.API"
 RUN dotnet build -c $BUILD_CONFIGURATION -o /app/build

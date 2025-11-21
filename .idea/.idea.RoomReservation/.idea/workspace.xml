@@ -15,6 +15,7 @@
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RoomReservation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RoomReservation/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RoomReservation.API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoomReservation.API/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +207,8 @@
       <workItem from="1763650157447" duration="3679000" />
       <workItem from="1763671344463" duration="7119000" />
       <workItem from="1763734692748" duration="3627000" />
-      <workItem from="1763756102970" duration="2232000" />
+      <workItem from="1763756102970" duration="6052000" />
+      <workItem from="1763763699079" duration="325000" />
     </task>
     <servers />
   </component>
