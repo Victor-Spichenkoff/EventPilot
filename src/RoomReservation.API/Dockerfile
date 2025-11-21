@@ -37,7 +37,7 @@ WORKDIR /src
 COPY RoomReservation.API/RoomReservation.API.csproj RoomReservation.API/
 COPY RoomReservation.Application/RoomReservation.Application.csproj RoomReservation.Application/
 COPY RoomReservation.Infrastructure/RoomReservation.Infrastructure.csproj RoomReservation.Infrastructure/
-#COPY RoomReservation.Domain/RoomReservation.Domain.csproj RoomReservation.Domain/
+COPY RoomReservation.Domain/RoomReservation.Domain.csproj RoomReservation.Domain/
 
 RUN dotnet restore "RoomReservation.API/RoomReservation.API.csproj"
 
