@@ -22,7 +22,7 @@ public class TestController(TestService testService)
         int gh = 0;
         if (v == "1")
             gh=(1 / gh);
-            // throw new ApiException("Não achado!", 404);
+            // throw new NotFoundException("Não achado!");
         return v;
     }
 }

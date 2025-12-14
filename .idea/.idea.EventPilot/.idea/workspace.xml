@@ -15,22 +15,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/UseMiddlewares.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Middlewares/ExceptionHandlingMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/ApiException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/BusinessException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/DomainException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/NotFoundException.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/TestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/TestController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/UseSwaggerDocumentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/UseMiddlewaresExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/GenericApiException.cs" beforeDir="false" />
-    </list>
+    <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -277,7 +262,7 @@
       <workItem from="1765489648195" duration="5124000" />
       <workItem from="1765544767133" duration="6506000" />
       <workItem from="1765572821493" duration="5301000" />
-      <workItem from="1765641337406" duration="3980000" />
+      <workItem from="1765641337406" duration="4370000" />
     </task>
     <servers />
   </component>

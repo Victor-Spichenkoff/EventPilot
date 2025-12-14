@@ -1,17 +1,20 @@
 using System.Net;
 using System.Text.Json;
+using EventPilot.Application.DTOs.Responses;
 using EventPilot.Domain.Exceptions;
+using EventPilot.Utils;
 
 namespace EventPilot.Middlewares;
 
-public class ExceptionHandlingMiddleware
+public class ExceptionHandlingMiddleware(
+    RequestDelegate next,
+    IWebHostEnvironment env,
+    ILogger<ExceptionHandlingMiddleware> logger)
 {
-    private readonly RequestDelegate _next;
+    private readonly RequestDelegate _next = next;
+    private readonly IWebHostEnvironment _env = env;
+    private  readonly ILogger<ExceptionHandlingMiddleware> _logger = logger;
 
-    public ExceptionHandlingMiddleware(RequestDelegate next)
-    {
-        _next = next;
-    }
 
     public async Task InvokeAsync(HttpContext context)
     {
@@ -19,7 +22,7 @@ public class ExceptionHandlingMiddleware
         {
             await _next(context);
         }
-        catch (ApiException ex)
+        catch (DomainException ex)
         {
             await HandleDomainExceptionAsync(context, ex);
         }
@@ -29,52 +32,62 @@ public class ExceptionHandlingMiddleware
         }
     }
 
+
     private static Task HandleDomainExceptionAsync(HttpContext context, DomainException exception)
     {
-        context.Response.ContentType = "application/json";
-
         // Parse error -> status
-        var statusCode = exception switch
-        {
-            NotFoundException => 404,
-            BusinessException => 400,
-            _ => 400
-        };
-        
-        var message = exception.Message;
+        var (statusCode, title) = ExceptionMapper.Map(exception);
 
-        var response = new
+        var response = new ErrorResponse()
         {
-            status = statusCode,
-            error = message
+            Title = title,
+            Status = statusCode,
+            Detail = exception.Message,
+            Instance = context.Request.Path
         };
 
-        context.Response.StatusCode = statusCode;
-
-        return context.Response.WriteAsync(
-            JsonSerializer.Serialize(response));
+        return SendResponse(
+            context: context,
+            errorResponse: response
+        );
     }
 
-    private static Task HandleExceptionAsync(HttpContext context, Exception exception)
+
+    private Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
-        Console.Error.WriteLine(exception);
-        Console.WriteLine("[ ERROR ] Server error");
-        context.Response.ContentType = "application/json";
-
+        // logs
+        logger.LogError(exception, "Unexpected exception");
+        
         var statusCode = HttpStatusCode.InternalServerError;
-        var message = "Unexpected error";
 
-        // Aqui depois vamos melhorar
-        var response = new
+        var response = new ErrorResponse()
         {
-            status = (int)statusCode,
-            error = message
+            Title = "Internal Server Error",
+            Status = (int)statusCode,
+            Detail = "Something went wrong",
+            Instance = context.Request.Path
         };
 
-        context.Response.StatusCode = (int)statusCode;
+        if (_env.IsDevelopment())
+        {
+            response.StackTrace = exception.ToString();
+        }
 
-        return context.Response.WriteAsync(
-            JsonSerializer.Serialize(response)
+        return SendResponse(
+            context: context,
+            errorResponse: response
         );
+    }
+
+
+    private static Task SendResponse(
+        HttpContext context,
+        ErrorResponse errorResponse
+    )
+    {
+        context.Response.ContentType = "application/json";
+        context.Response.StatusCode = errorResponse.Status;
+
+        return context.Response.WriteAsJsonAsync(errorResponse);
     }
 }
