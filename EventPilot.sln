@@ -4,6 +4,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7436960-96FB-4BBE-BEDD-A72A6B9BC27C}"
 	ProjectSection(SolutionItems) = preProject
 		compose.yaml = compose.yaml
+		README.md = README.md
+		DEV.md = DEV.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventPilot.API", "src\EventPilot.API\EventPilot.API.csproj", "{1ECE652E-9F22-4CD8-A0BA-A9349BBE148B}"
@@ -15,6 +17,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventPilot.Infrastructure", "src\EventPilot.Infrastructure\EventPilot.Infrastructure.csproj", "{902A49AC-AD73-431F-9B3C-ABD337B7C33D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "tests\UnitTests\UnitTests.csproj", "{BD32A471-B81B-4E1F-A059-CFEA06966D07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "tests\IntegrationTests\IntegrationTests.csproj", "{18780F43-DEC5-4E8F-B27F-9C58685E4D7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +46,9 @@ Global
 		{BD32A471-B81B-4E1F-A059-CFEA06966D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD32A471-B81B-4E1F-A059-CFEA06966D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD32A471-B81B-4E1F-A059-CFEA06966D07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18780F43-DEC5-4E8F-B27F-9C58685E4D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18780F43-DEC5-4E8F-B27F-9C58685E4D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18780F43-DEC5-4E8F-B27F-9C58685E4D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18780F43-DEC5-4E8F-B27F-9C58685E4D7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

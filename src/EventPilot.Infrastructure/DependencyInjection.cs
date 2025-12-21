@@ -1,4 +1,6 @@
+using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Infrastructure.Context;
+using EventPilot.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +18,8 @@ public static class DependencyInjectionExtension
             options.UseSqlite(config.GetConnectionString("Default")));
         
         //Repositories Here
+        services.AddScoped<IEventRepository, EventRepository>();
+        
         
         return services;
     }

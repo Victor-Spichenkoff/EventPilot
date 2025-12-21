@@ -1,3 +1,11 @@
+# ToDo
+- [ ] Create Event CRUD
+- [ ] Add Login System
+- [ ] Add Guard to Event CRUD
+- [ ] 
+- [ ] 
+
+
 # Migrations
 - Open ./src
 - run

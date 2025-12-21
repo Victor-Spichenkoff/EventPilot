@@ -7,7 +7,10 @@ public static class DependencyInjectionExtension
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
-        services.AddScoped<TestService, TestService>();
+        
+        //Services
+        services.AddScoped<TestService>();
+        services.AddScoped<EventService>();
         
         return services;
     }
