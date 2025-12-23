@@ -6,13 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EventPilot.Controllers;
 
-
 [ApiController]
 [Route("[controller]")]
-public class EventController(EventService eventService): Controller
+public class EventController(EventService eventService) : ControllerBase
 {
     private readonly EventService _eventService = eventService;
-    
+
     [HttpGet]
     public ICollection<Event> Get()
     {
@@ -20,15 +19,18 @@ public class EventController(EventService eventService): Controller
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetById(long id)
+    public async Task<IActionResult> GetEventById(long id)
     {
+        if (id == 1)
+            return NotFound("Não encontrado");
+        
         return Ok(await _eventService.GetEventAsync(id));
     }
-    
+
+
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody] CreateEventDto eventDto)
+    public async Task<IActionResult> CreateEvent([FromBody] CreateEventDto eventDto)
     {
-        var createdEvent = await _eventService.CreateEventAsync(eventDto);
-        return Ok(createdEvent);
+        return Ok(await _eventService.CreateEventAsync(eventDto));
     }
 }

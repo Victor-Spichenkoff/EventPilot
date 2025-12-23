@@ -9,7 +9,7 @@ public class ErrorResponse
     public string Detail { get; set; } // Error Message or Technical detail
     public string Instance { get; set; } // Endpoint or trace
     public string StackTrace { get; set; }
-    public List<ErrorItem> Errors { get; set; } // Errors in validation
+    public List<object> Errors { get; set; } // Errors in validation
 }
 
 public class ErrorItem

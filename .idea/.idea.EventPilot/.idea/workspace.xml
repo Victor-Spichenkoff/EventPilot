@@ -16,27 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/Tests/ErrorHandlerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/Repositories/IEventRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/Repositories/IRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/EventRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/IntegrationTests/ApiFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/IntegrationTests/Controllers/Tests/ErrorHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/IntegrationTests/IntegrationTests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/UnitTests/ValueObjects/CodeTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddModelStateConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventPilot.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Event.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Entities/Event.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UnitTests/UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/UnitTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Responses/ErrorResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Responses/ErrorResponse.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.EventPilot.API: http.executor": "Run",
+    ".NET Launch Settings Profile.EventPilot.API: http.executor": "Debug",
     ".NET Launch Settings Profile.RoomReservation.API: http.executor": "Run",
     ".NET Launch Settings Profile.RoomReservation: http.executor": "Run",
     "7aa648f5-62e3-403b-8805-b52e60166607.executor": "Debug",
@@ -301,6 +285,10 @@
       <workItem from="1766149599648" duration="4327000" />
       <workItem from="1766181511086" duration="4839000" />
       <workItem from="1766234287681" duration="10497000" />
+      <workItem from="1766268334397" duration="5600000" />
+      <workItem from="1766365643102" duration="2864000" />
+      <workItem from="1766409639095" duration="5446000" />
+      <workItem from="1766437682372" duration="6557000" />
     </task>
     <servers />
   </component>
@@ -310,5 +298,37 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.API\Controllers\EventController.cs" containingFunctionPresentation="Method 'CreateEvent'">
+            <startOffsets>
+              <option value="956" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1016" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.API\Controllers\EventController.cs" containingFunctionPresentation="Method 'CreateEvent'">
+            <startOffsets>
+              <option value="868" />
+            </startOffsets>
+            <endOffsets>
+              <option value="891" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
