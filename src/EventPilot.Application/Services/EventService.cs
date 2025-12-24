@@ -18,10 +18,19 @@ public class EventService(IEventRepository eventRepository)
         return eventFromDb;
     }
 
-    public async Task<Event?> CreateEventAsync(CreateEventDto dto)
+    public async Task<Event?>  CreateEventAsync(CreateEventDto dto)
     {
         //TODO
-        return await _eventRepository.GetByIdAsync(1);
-        // return await _eventRepository.CreateAsync(entity);
+        // return await _eventRepository.GetByIdAsync(1);
+        var eventToCreate = new Event()
+        {
+            Name = dto.Name,
+            Description = dto.Description,
+            StartDate = dto.StartDate,
+            Location = dto.Location,
+            Status = dto.Status,
+            EndDate = dto.EndDate,
+        };
+        return await _eventRepository.CreateAsync(eventToCreate);
     }
 }

@@ -1,4 +1,5 @@
 using EventPilot.Application.DTOs.Event;
+using EventPilot.Application.DTOs.Responses;
 using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Application.Services;
 using EventPilot.Domain.Entities;
@@ -8,7 +9,7 @@ namespace EventPilot.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class EventController(EventService eventService) : ControllerBase
+public class EventsController(EventService eventService) : ControllerBase
 {
     private readonly EventService _eventService = eventService;
 
@@ -23,7 +24,7 @@ public class EventController(EventService eventService) : ControllerBase
     {
         if (id == 1)
             return NotFound("Não encontrado");
-        
+
         return Ok(await _eventService.GetEventAsync(id));
     }
 
@@ -31,6 +32,12 @@ public class EventController(EventService eventService) : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateEvent([FromBody] CreateEventDto eventDto)
     {
-        return Ok(await _eventService.CreateEventAsync(eventDto));
+        var createdEvent = await _eventService.CreateEventAsync(eventDto);
+        var mappedEvent = new EventResponseDto
+        {
+            Name = null,
+            Location = null
+        };
+        return Ok(mappedEvent);
     }
 }

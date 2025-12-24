@@ -14,9 +14,11 @@ public class EventRepository(AppDbContext context) : IEventRepository
         return await _context.Events.FindAsync(id);
     }
 
-    public Task<Event> CreateAsync(Event entity)
+    public async Task<Event> CreateAsync(Event entity)
     {
-        throw new NotImplementedException();
+        var createdEntity = await _context.Events.AddAsync(entity);
+        var result = await _context.SaveChangesAsync();
+        return createdEntity.Entity;
     }
 
     public Task<Event> UpdateAsync(Event entity)

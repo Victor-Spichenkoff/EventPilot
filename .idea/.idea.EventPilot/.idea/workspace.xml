@@ -16,11 +16,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddModelStateConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Responses/ErrorResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Responses/ErrorResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/EventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/EventRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,25 +49,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.EventPilot.API: http.executor": "Debug",
-    ".NET Launch Settings Profile.RoomReservation.API: http.executor": "Run",
-    ".NET Launch Settings Profile.RoomReservation: http.executor": "Run",
-    "7aa648f5-62e3-403b-8805-b52e60166607.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.EventPilot.API: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.RoomReservation.API: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.RoomReservation: http.executor&quot;: &quot;Run&quot;,
+    &quot;7aa648f5-62e3-403b-8805-b52e60166607.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.EventPilot.API: http">
     <configuration name="EventPilot.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" />
@@ -288,7 +287,8 @@
       <workItem from="1766268334397" duration="5600000" />
       <workItem from="1766365643102" duration="2864000" />
       <workItem from="1766409639095" duration="5446000" />
-      <workItem from="1766437682372" duration="6557000" />
+      <workItem from="1766437682372" duration="6647000" />
+      <workItem from="1766492769255" duration="7054000" />
     </task>
     <servers />
   </component>
@@ -298,37 +298,5 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs</url>
-          <line>36</line>
-          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.API\Controllers\EventController.cs" containingFunctionPresentation="Method 'CreateEvent'">
-            <startOffsets>
-              <option value="956" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1016" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.API\Controllers\EventController.cs" containingFunctionPresentation="Method 'CreateEvent'">
-            <startOffsets>
-              <option value="868" />
-            </startOffsets>
-            <endOffsets>
-              <option value="891" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
