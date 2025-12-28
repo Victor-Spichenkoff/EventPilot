@@ -1,5 +1,4 @@
 using System.Net;
-using System.Text.Json;
 using EventPilot.Application.DTOs.Responses;
 using EventPilot.Domain.Exceptions;
 using EventPilot.Utils;
@@ -56,7 +55,7 @@ public class ExceptionHandlingMiddleware(
     private Task HandleExceptionAsync(HttpContext context, Exception exception)
     {
         // logs
-        logger.LogError(exception, "Unexpected exception");
+        _logger.LogError(exception, "Unexpected exception");
         
         var statusCode = HttpStatusCode.InternalServerError;
 

@@ -3,6 +3,7 @@ using EventPilot.Application.DTOs.Responses;
 using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Application.Services;
 using EventPilot.Domain.Entities;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventPilot.Controllers;
@@ -20,24 +21,16 @@ public class EventsController(EventService eventService) : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetEventById(long id)
-    {
-        if (id == 1)
-            return NotFound("Não encontrado");
+    public async Task<ActionResult<EventResponseDto>> GetEventById(long id)
+    => Ok(await _eventService.GetEventAsync(id));
+    
 
-        return Ok(await _eventService.GetEventAsync(id));
-    }
-
-
+    
+    [ProducesResponseType(typeof(EventResponseDto), 200)]
     [HttpPost]
-    public async Task<IActionResult> CreateEvent([FromBody] CreateEventDto eventDto)
+    public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] CreateEventDto eventDto)
     {
         var createdEvent = await _eventService.CreateEventAsync(eventDto);
-        var mappedEvent = new EventResponseDto
-        {
-            Name = null,
-            Location = null
-        };
-        return Ok(mappedEvent);
+        return Ok(createdEvent.Adapt<EventResponseDto>());
     }
 }

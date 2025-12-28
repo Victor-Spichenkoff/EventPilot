@@ -19,7 +19,7 @@ public class EventConfiguration: IEntityTypeConfiguration<Event>
 
         builder
             .Property(e => e.CreationDate)
-            .HasDefaultValueSql("GETDATE()")
+            .HasDefaultValueSql("datetime('now')")
             .ValueGeneratedOnAdd();
     }
 }

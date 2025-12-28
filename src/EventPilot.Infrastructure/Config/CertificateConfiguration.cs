@@ -24,7 +24,7 @@ public class CertificateConfiguration: IEntityTypeConfiguration<Certificate>
         
         builder
             .Property(c => c.GenerationDate)
-            .HasDefaultValueSql("GETDATE()")
+            .HasDefaultValueSql("datetime('now')")
             .ValueGeneratedOnAdd();
     }
 }
