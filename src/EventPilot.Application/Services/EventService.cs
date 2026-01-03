@@ -48,7 +48,7 @@ public class EventService(IEventRepository eventRepository)
         if(eventDto.ClearTotalCapacity == true)
             newEvent.TotalCapacity = null;
         if(eventDto.ClearDescription == true)
-            newEvent.Description = null;
+            newEvent.Description = null;    
 
         var updateEvent = await _eventRepository.UpdateAsync(newEvent);
         return updateEvent.Adapt<EventResponseDto>();

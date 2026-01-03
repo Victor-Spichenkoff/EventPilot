@@ -15,7 +15,7 @@ public static class AddPresentationExtension
             .AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-            });
+            }); 
         
         services.AddModelStateConfiguration();
         
