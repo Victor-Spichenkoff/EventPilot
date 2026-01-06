@@ -11,8 +11,8 @@ public readonly struct Optional<T>
         Value = value;
     }
 
-    public static Optional<T> Missing()
-        => new Optional<T>();
+    // public static Optional<T> Missing()
+    //     => new Optional<T>();
 
     public static Optional<T> From(T? value)
         => new Optional<T>(value);

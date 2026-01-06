@@ -13,8 +13,7 @@ public class ExceptionHandlingMiddleware(
     private readonly RequestDelegate _next = next;
     private readonly IWebHostEnvironment _env = env;
     private  readonly ILogger<ExceptionHandlingMiddleware> _logger = logger;
-
-
+    
     public async Task InvokeAsync(HttpContext context)
     {
         try

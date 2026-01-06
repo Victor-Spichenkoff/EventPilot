@@ -60,17 +60,18 @@ public class EventService(IEventRepository eventRepository)
         if(eventToUpdate == null)
             throw new NotFoundException("Event not found");
         
-        var newEvent =  eventDto.Adapt(eventToUpdate);
-        if(newEvent == null)
+        // var newEvent =  eventDto.Adapt(eventToUpdate);
+        eventDto.Adapt(eventToUpdate);
+        if(eventToUpdate == null)
             throw new BusinessException("Can't update event");
         
         // Clear situations
         if(eventDto.ClearTotalCapacity == true)
-            newEvent.TotalCapacity = null;
+            eventToUpdate.TotalCapacity = null;
         if(eventDto.ClearDescription == true)
-            newEvent.Description = null;
+            eventToUpdate.Description = null;
 
-        var updateEvent = await _eventRepository.UpdateAsync(newEvent);
+        var updateEvent = await _eventRepository.UpdateAsync(eventToUpdate);
         return updateEvent.Adapt<EventResponseDto>();
     }
 }

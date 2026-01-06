@@ -1,5 +1,5 @@
-using System.Text.Json.Serialization;
 using EventPilot.Application;
+using EventPilot.Domain.ValueObjects;
 using Mapster;
 
 namespace EventPilot.Extensions;
@@ -15,6 +15,7 @@ public static class AddPMappingExtension
         TypeAdapterConfig.GlobalSettings.Scan(
             typeof(EventMappingConfig).Assembly
         );
+        
         
         services.AddSingleton(TypeAdapterConfig.GlobalSettings);
 

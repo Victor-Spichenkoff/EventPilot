@@ -16,14 +16,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/ValueObjects/Optional.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Serialization/OptionalJsonConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Serialization/OptionalJsonConverterFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Mapping/Apply/EventPatchMapping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/CreateEventDtoValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddMappingConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddMappingConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Middlewares/ExceptionHandlingMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Middlewares/ExceptionHandlingMiddleware.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/PatchEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/PatchEventDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/UpdateEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/UpdateEventDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/ValueObjects/Optional.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Domain/ValueObjects/Optional.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +44,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/255f916e5a2d424ef01b291afc761e049b367614440bf4b216824ec479064b/WebApplicationFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ad1d58b8dd22123dfae3f2cf5d8b199992465c9c344d032f93a826d8e5539ff/RuntimeType.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ad8b2779652854276d03ec153d51377686c7193799d1688e119272770d0cf/EqualityAsserts.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tests/IntegrationTests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -305,7 +312,10 @@
       <workItem from="1767276363189" duration="2668000" />
       <workItem from="1767286858842" duration="2200000" />
       <workItem from="1767315243955" duration="2965000" />
-      <workItem from="1767391190089" duration="5783000" />
+      <workItem from="1767391190089" duration="5868000" />
+      <workItem from="1767442617911" duration="10641000" />
+      <workItem from="1767476217346" duration="8721000" />
+      <workItem from="1767646444477" duration="4875000" />
     </task>
     <servers />
   </component>
@@ -320,19 +330,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/EventPilot.Application/Mapping/EventMappingConfig.cs</url>
-          <line>11</line>
-          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Mapping\EventMappingConfig.cs" containingFunctionPresentation="Method 'Register'">
+          <url>file://$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs</url>
+          <line>47</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Services\EventService.cs" containingFunctionPresentation="Method 'UpdateEventAsync'">
             <startOffsets>
-              <option value="278" />
+              <option value="1692" />
             </startOffsets>
             <endOffsets>
-              <option value="356" />
+              <option value="1731" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="LaunchSettings">
+        <watch expression="this.&lt;eventToUpdate&gt;5__1.Status" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

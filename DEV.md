@@ -1,7 +1,12 @@
 # ToDo
 - [X] Patch vs Update com relação ao nulls vs {} e como validar no update que veio 100%
-- [ ] Como converter, usando mapster + config ou só jogando direto no code? Porque ele usa obj.Value, não só obj
-- [ ] Como funcionam os bloqueios extras de nulls (ef, service?, DTO?), quando o campo não pode mesmo ser null
+- [ ] Test it changes validations on swagger compare with DA 
+- [ ] Fluent Validation + Data Annotation, como integrar as formas de lidar com erros
+
+
+
+- [ ] Como criar testes para detectar nulls no patch trabalhando bem
+- [ ] Como acontece com as validações e como lidam com null na hora de salvar? requiered [Required], ? ...
 
 
 - [ ] Create Event CRUD
