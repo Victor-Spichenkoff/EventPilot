@@ -3,7 +3,9 @@
 - [ ] Test it changes validations on swagger compare with DA 
 - [ ] Fluent Validation + Data Annotation, como integrar as formas de lidar com erros
 
-- DOU OVERRIDE DO START DATE PARA PODER SER NO PASSADO NO UODATE?
+- DO OVERRIDE DO START DATE PARA PODER SER NO PASSADO NO UPDATE?
+- Test if using FA I can skip enum check on service or still necessary
+
 
 Nesse cenário, o que fazer no ASP.NET em API:
 - DTO de create e put são identicos, mesma validação e no fim também é tudo obrigatório

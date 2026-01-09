@@ -16,30 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/EventBaseDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validations/MinDateTodayAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/PatchEventDtoValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/UpdateEventDtoValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/CreateEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/CreateEventDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/PatchEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/PatchEventDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/UpdateEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/UpdateEventDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/CreateEventDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/CreateEventDtoValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/CheckInConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/CheckInConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/EventConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/EventConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/SessionRegistrationConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/SessionRegistrationConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/UserConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Config/UserConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev2.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev2.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,7 +307,8 @@
       <workItem from="1767736785246" duration="6072000" />
       <workItem from="1767787350034" duration="12206000" />
       <workItem from="1767834583438" duration="1549000" />
-      <workItem from="1767875188256" duration="6940000" />
+      <workItem from="1767875188256" duration="8334000" />
+      <workItem from="1767961282249" duration="595000" />
     </task>
     <servers />
   </component>
