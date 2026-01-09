@@ -62,7 +62,8 @@ public class EventService(IEventRepository eventRepository)
         var eventToUpdate = await _eventRepository.GetByIdAsync(id);
         if(eventToUpdate == null)
             throw new NotFoundException("Event not found");
-        ValidateStatusEnum(eventDto.Status);
+        if(eventDto.Status is not null)
+            ValidateStatusEnum(eventDto.Status);
         
         // var newEvent =  eventDto.Adapt(eventToUpdate);
         eventDto.Adapt(eventToUpdate);
@@ -83,7 +84,7 @@ public class EventService(IEventRepository eventRepository)
     // Support
     private void ValidateStatusEnum(EventStatus? status)
     {
-        if (status != null && !Enum.IsDefined(typeof(EventStatus), status))
+        if (status==null || !Enum.IsDefined(typeof(EventStatus), status))
             throw new BusinessException("Invalid Status");
     }
 }
