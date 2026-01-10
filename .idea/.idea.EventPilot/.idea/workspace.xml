@@ -16,12 +16,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Domain/Exceptions/InternalServerException.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/Repositories/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/Repositories/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/Repositories/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/Repositories/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Utils/ExceptionMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Utils/ExceptionMapper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/EventRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/EventRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Repositories/UserRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -315,7 +313,8 @@
       <workItem from="1767834583438" duration="1549000" />
       <workItem from="1767875188256" duration="8334000" />
       <workItem from="1767961282249" duration="13887000" />
-      <workItem from="1767996130188" duration="3591000" />
+      <workItem from="1767996130188" duration="4873000" />
+      <workItem from="1768049764472" duration="807000" />
     </task>
     <servers />
   </component>

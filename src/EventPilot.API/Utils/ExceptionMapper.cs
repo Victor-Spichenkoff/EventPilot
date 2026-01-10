@@ -9,6 +9,7 @@ public static class ExceptionMapper
         {
             NotFoundException => (404, "Not Found"),
             BusinessException => (400, "Business Exception"),
+            InternalServerException => (500, "Internal Server Error"),
             _ => (500, "Something went wrong")
         };
 }

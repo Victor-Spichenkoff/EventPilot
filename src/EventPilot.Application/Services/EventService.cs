@@ -27,12 +27,16 @@ public class EventService(IEventRepository eventRepository)
         return eventFromDb.Adapt<EventResponseDto>();
     }
 
-    public async Task<EventResponseDto?>  CreateEventAsync(CreateEventDto eventDto)
+    public async Task<EventResponseDto>  CreateEventAsync(CreateEventDto eventDto)
     {
         ValidateStatusEnum(eventDto.Status);
         
         var eventToCreate = eventDto.Adapt<Event>();
         var createdEvent = await _eventRepository.CreateAsync(eventToCreate);
+        
+        if(createdEvent is null)
+            throw new InternalServerException("Can't create event");
+        
         return createdEvent.Adapt<EventResponseDto>();
     }
 

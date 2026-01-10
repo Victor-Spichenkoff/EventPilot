@@ -29,8 +29,8 @@ public class UserRepository(AppDbContext context): IUserRepository
     {
         var createdUser = _context.Users.Add(user);
         var isSuccess = await _context.SaveChangesAsync() > 0;
-        if (!isSuccess)//TODO: CREATE A 500 EXCEPTIOn
-            throw new Exception;
+        if (!isSuccess)
+            throw new InternalServerException("Can't create user");
         
         return createdUser.Entity;
     }
