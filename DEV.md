@@ -1,3 +1,6 @@
+# Current BUG
+- result of GetById is a null full entity, but in the creation it's filled, but in the assertions it's also null for the original entity
+
 # ToDo
 - [X] Patch vs Update com relação ao nulls vs {} e como validar no update que veio 100%
 - [ ] Test it changes validations on swagger compare with DA 

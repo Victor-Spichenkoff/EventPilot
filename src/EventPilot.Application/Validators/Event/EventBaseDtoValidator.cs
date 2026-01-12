@@ -35,7 +35,7 @@ public class EventBaseDtoValidator<T> : AbstractValidator<T>
     protected void ValidateEndDateBiggerThanStartDate()
     {
         RuleFor(x => x.EndDate)
-            .GreaterThan(x => x.StartDate).WithMessage("Start date can't be bigger than end date");
+            .GreaterThanOrEqualTo(x => x.StartDate).WithMessage("Start date can't be bigger than end date");
     }
     
 

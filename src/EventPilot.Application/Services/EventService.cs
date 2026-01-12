@@ -69,14 +69,12 @@ public class EventService(IEventRepository eventRepository)
         if(eventDto.Status is not null)
             ValidateStatusEnum(eventDto.Status);
         
-        // var newEvent =  eventDto.Adapt(eventToUpdate);
         eventDto.Adapt(eventToUpdate);
+
         if(eventToUpdate == null)
             throw new BusinessException("Can't update event");
 
-        if (eventToUpdate.EndDate <= eventToUpdate.StartDate)
-            throw new BusinessException("Start Date can't be bigger than end date"); 
-        
+
         // Clear situations
         if(eventDto.ClearTotalCapacity == true)
             eventToUpdate.TotalCapacity = null;

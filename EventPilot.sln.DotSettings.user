@@ -4,16 +4,33 @@
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ALateBoundTestFramework_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003Ff9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4_003FLateBoundTestFramework_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003ARuntimeType_002ECoreCLR_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003Fad1d58b8dd22123dfae3f2cf5d8b199992465c9c344d032f93a826d8e5539ff_003FRuntimeType_002ECoreCLR_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7020124F_002D9FFC_002D4AC3_002D8F3D_002DAAB8E0240759_002Ff_003AWebApplicationFactory_002Ecs_002Fl_003A_002E_002E_003F_002E_002E_003F_002E_002E_003FAppData_003FRoaming_003FJetBrains_003FRider2024_002E3_003Fresharper_002Dhost_003FSourcesCache_003F255f916e5a2d424ef01b291afc761e049b367614440bf4b216824ec479064b_003FWebApplicationFactory_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7aa648f5_002D62e3_002D403b_002D8805_002Db52e60166607/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ErrorHandler" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2e2f30d7_002D07bc_002D40c2_002Db17a_002D9feec346cc26/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest.Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.DTOs.Event.EventDtoTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7aa648f5_002D62e3_002D403b_002D8805_002Db52e60166607/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ErrorHandler" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::18780F43-DEC5-4E8F-B27F-9C58685E4D7C::net9.0::IntegrationTest.Controllers.Tests.ErrorHandler&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.ValueObjects.CodeTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.DTOs.Event.CreateEventDtoTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.DTOs.Event.EventDtoTest.Should_Pass_When_All_Fields_Are_Null&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b61d3f1b_002D6524_002D4400_002Dac3e_002D96013ad0fce1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ef4be803_002D05d7_002D4f9c_002Db1c0_002D5397e08cf98c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Should_Be_Valid_When_Nullable_Fields_Are_Null" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.DTOs.Event.CreateEventDtoTest.Should_Be_Valid_When_Nullable_Fields_Are_Null&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest.Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f29c2ccc_002Da0e7_002D4123_002Db209_002D1bcf0765c6a6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,7 +1,8 @@
 using EventPilot.Application.DTOs.Event;
 using EventPilot.Application.Validators.Event;
 using EventPilot.Domain.Enum;
-using FluentAssertions;
+
+using Shouldly;
 
 namespace UnitTests.DTOs.Event;
 
@@ -17,7 +18,7 @@ public class EventDtoTest
         
         var result = validator.Validate(dto);
 
-        result.IsValid.Should().BeTrue();
+        result.IsValid.ShouldBeTrue();
     }
     
     [Fact]
@@ -30,7 +31,7 @@ public class EventDtoTest
         
         var result = validator.Validate(dto);
 
-        result.IsValid.Should().BeTrue();
+        result.IsValid.ShouldBeTrue();
     }
     
     
@@ -43,9 +44,8 @@ public class EventDtoTest
         
         var result = validator.Validate(dto);
 
-        result.IsValid.Should().BeFalse();
-        result.Errors.Should()
-            .ContainSingle(e => e.PropertyName  == nameof(EventDto.StartDate));
+        result.IsValid.ShouldBeFalse();
+        result.Errors.ShouldContain(e => e.PropertyName  == nameof(EventDto.StartDate));
         //containSingle -> Só 1 propriedade ([0]) e sendo assim
     }
 
@@ -60,9 +60,9 @@ public class EventDtoTest
         
         var result = validator.Validate(dto);
 
-        result.IsValid.Should().BeFalse();
-        result.Errors.Should()
-            .Contain(e => e.PropertyName  == nameof(EventDto.EndDate));
+        result.IsValid.ShouldBeFalse();
+        result.Errors
+            .ShouldContain(e => e.PropertyName  == nameof(EventDto.EndDate));
     }
     
     
@@ -76,7 +76,7 @@ public class EventDtoTest
         
         var result = validator.Validate(dto);
 
-        result.IsValid.Should().BeTrue();
+        result.IsValid.ShouldBeTrue();
     }
     
     // PATCH
@@ -100,7 +100,7 @@ public class EventDtoTest
         
         var result = validator.Validate(dto);
         
-        result.IsValid.Should().BeTrue();
+        result.IsValid.ShouldBeTrue();
     }
 
 

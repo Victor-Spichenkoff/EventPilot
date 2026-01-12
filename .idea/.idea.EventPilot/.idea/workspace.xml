@@ -16,17 +16,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/UnitTests/Services/EventServiceTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/EventController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/CreateEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/EventDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/UpdateEventDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/Event/UpdateEventDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/CreateEventDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/CreateEventDtoValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/UpdateEventDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/UpdateEventDtoValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UnitTests/DTOs/Event/CreateEventDtoTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/DTOs/EventDtoTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/IntegrationTests/IntegrationTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntegrationTests/IntegrationTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/UnitTests/DTOs/EventDtoTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/DTOs/EventDtoTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/UnitTests/UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/UnitTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/UnitTests/ValueObjects/CodeTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/ValueObjects/CodeTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +64,13 @@
     &quot;.NET Launch Settings Profile.EventPilot.API: http.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.RoomReservation.API: http.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.RoomReservation: http.executor&quot;: &quot;Run&quot;,
+    &quot;2e2f30d7-07bc-40c2-b17a-9feec346cc26.executor&quot;: &quot;Debug&quot;,
     &quot;7aa648f5-62e3-403b-8805-b52e60166607.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;b61d3f1b-6524-4400-ac3e-96013ad0fce1.executor&quot;: &quot;Debug&quot;,
+    &quot;ef4be803-05d7-4f9c-b1c0-5397e08cf98c.executor&quot;: &quot;Debug&quot;,
+    &quot;f29c2ccc-a0e7-4123-b209-1bcf0765c6a6.executor&quot;: &quot;Debug&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -325,7 +329,9 @@
       <workItem from="1768090080038" duration="5308000" />
       <workItem from="1768141075827" duration="2939000" />
       <workItem from="1768151092688" duration="5498000" />
-      <workItem from="1768179713362" duration="4051000" />
+      <workItem from="1768179713362" duration="4108000" />
+      <workItem from="1768226476786" duration="8066000" />
+      <workItem from="1768254265707" duration="2146000" />
     </task>
     <servers />
   </component>
@@ -341,16 +347,55 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/tests/UnitTests/DTOs/EventDtoTest.cs</url>
-          <line>78</line>
+          <line>79</line>
           <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\tests\UnitTests\DTOs\Event\CreateEventDtoTest.cs" containingFunctionPresentation="Method 'Should_Pass_When_StartDate_Is_In_Past_And_Is_UpdateDto'">
             <startOffsets>
-              <option value="2265" />
+              <option value="2256" />
             </startOffsets>
             <endOffsets>
-              <option value="2298" />
+              <option value="2257" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs</url>
+          <line>73</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Services\EventService.cs" containingFunctionPresentation="Method 'PatchEventAsync'">
+            <startOffsets>
+              <option value="2645" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2670" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs</url>
+          <line>68</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Services\EventService.cs" containingFunctionPresentation="Method 'PatchEventAsync'">
+            <startOffsets>
+              <option value="2507" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2538" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/UnitTests/Services/EventServiceTest.cs</url>
+          <line>43</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\tests\UnitTests\Services\EventServiceTest.cs" containingFunctionPresentation="Method 'Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null'">
+            <startOffsets>
+              <option value="1213" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1252" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
