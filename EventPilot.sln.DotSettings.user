@@ -22,6 +22,8 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b61d3f1b_002D6524_002D4400_002Dac3e_002D96013ad0fce1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.DTOs.Event.EventDtoTest.Should_Pass_Fail_When_StartDate_Is_Invalid_In_Patch&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.DTOs.Event.EventDtoTest.Should_Pass_Fail_When_Dates_Are_Invalids_In_Patch&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ef4be803_002D05d7_002D4f9c_002Db1c0_002D5397e08cf98c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Should_Be_Valid_When_Nullable_Fields_Are_Null" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

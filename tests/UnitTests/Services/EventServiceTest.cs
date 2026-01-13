@@ -14,16 +14,8 @@ namespace UnitTests.Services;
 [Collection("MapsterTests")]// avoids parallelism in tests with same group
 public class EventServiceTest
 {
-    private static readonly DateTime _now = DateTime.Now;
-    private static readonly TypeAdapterConfig _mapsterConfig = new TypeAdapterConfig();
-    
+    private static readonly DateTime Now = DateTime.Now;
 
-    public EventServiceTest()
-    {
-        TypeAdapterConfig.GlobalSettings
-            .NewConfig<PatchEventDto, Event>()
-            .IgnoreNullValues(true);
-    }
     
     
     [Fact]
@@ -53,7 +45,66 @@ public class EventServiceTest
         
         repoMock.Verify(r => r.UpdateAsync(originalEvent), Times.Once);
     }
+    
+    /*
+     * ClearDescription -> Must be allowed
+     * totalCapacity = null -> should ignore, even though it's a valid nullable property
+     */
+    [Fact]
+    public async Task  Should_Reset_Only_Allowed_Properties_With_Clear_Property()
+    {
+        var originalEvent = GetNormalEvent();// creates a basic eventEntity with all fields filled
+        var dto = new PatchEventDto()
+        {
+            ClearDescription = true
+        };
 
+        var repoMock = CreateMockAndSetGetByIdAndUpdate(originalEvent);
+        
+        var service = new EventService(repoMock.Object);
+        
+        // ACT
+        var result = await service.PatchEventAsync(dto, 1);
+
+        var unmodifiedEvent = GetNormalEvent();
+        
+        result.Name.ShouldBe(unmodifiedEvent.Name);//not nullable
+        result.Description.ShouldBe(null);//modified
+        result.TotalCapacity.ShouldBe(unmodifiedEvent.TotalCapacity);// not modified, but nullable
+
+        
+        repoMock.Verify(r => r.UpdateAsync(originalEvent), Times.Once);
+    }
+    
+
+    [Fact]
+    public async Task  Should_Update_Without_Set_NunNullable_Property_ToNull()
+    {
+        var originalEvent = GetNormalEvent();// creates a basic eventEntity with all fields filled
+        var newName = "This was updated";
+        var dto = new PatchEventDto()
+        {
+            Name = newName,
+            StartDate = null,
+            Status = EventStatus.Cancelled
+        };
+
+        var repoMock = CreateMockAndSetGetByIdAndUpdate(originalEvent);
+        
+        var service = new EventService(repoMock.Object);
+        
+        // ACT
+        var result = await service.PatchEventAsync(dto, 1);
+
+        var unmodifiedEvent = GetNormalEvent();
+        
+        result.Name.ShouldBe(newName);
+        result.Status.ShouldBe(EventStatus.Cancelled);
+        result.StartDate.ShouldBe(unmodifiedEvent.StartDate);
+        result.Location.ShouldBe(unmodifiedEvent.Location);//not modified
+        
+        repoMock.Verify(r => r.UpdateAsync(originalEvent), Times.Once);
+    }
 
 
     private static Event GetNormalEvent()
@@ -63,9 +114,9 @@ public class EventServiceTest
             Name = "My Event",
             Location = "Baramas",
             Description = "Test Event",
-            StartDate = _now.AddHours(1),
-            EndDate = _now.AddHours(10),
-            CreationDate = _now,
+            StartDate = Now.AddHours(1),
+            EndDate = Now.AddHours(10),
+            CreationDate = Now,
             TotalCapacity = 1000,
             Status = EventStatus.Published,
         };
