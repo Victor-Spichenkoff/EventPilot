@@ -2,6 +2,7 @@ using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Domain.Entities;
 using EventPilot.Domain.Exceptions;
 using EventPilot.Infrastructure.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace EventPilot.Infrastructure.Repositories;
 
@@ -43,5 +44,10 @@ public class UserRepository(AppDbContext context): IUserRepository
     public Task<bool> DeleteByIdAsync(User user)
     {
         throw new NotImplementedException();
+    }
+
+    public async Task<User?> GetUserByEmail(string email)
+    {
+        return await _context.Users.Where(u => u.Email == email).FirstOrDefaultAsync();
     }
 }

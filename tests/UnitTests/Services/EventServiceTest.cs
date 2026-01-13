@@ -112,7 +112,7 @@ public class EventServiceTest
         {
             Id = 1,
             Name = "My Event",
-            Location = "Baramas",
+            Location = "Bahamas",
             Description = "Test Event",
             StartDate = Now.AddHours(1),
             EndDate = Now.AddHours(10),

@@ -16,12 +16,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/UnitTests/Collections/MapsterCollection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/UnitTests/Fixtures/MapsterFixture.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/ExternarServices/IPasswordHashService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/PasswordHashService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/IntegrationTests/ApiFactories/EventServiceApiFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/IntegrationTests/Helpers/Entities/Event.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/IntegrationTests/Services/EventPatchServiceTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/IntegrationTests/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UnitTests/DTOs/EventDtoTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/DTOs/EventDtoTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/IntegrationTests/ApiFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntegrationTests/ApiFactories/ApiFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/UnitTests/Services/EventServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/Services/EventServiceTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -327,7 +337,8 @@
       <workItem from="1768151092688" duration="5498000" />
       <workItem from="1768179713362" duration="4108000" />
       <workItem from="1768226476786" duration="8066000" />
-      <workItem from="1768254265707" duration="5833000" />
+      <workItem from="1768254265707" duration="9245000" />
+      <workItem from="1768307026202" duration="10225000" />
     </task>
     <servers />
   </component>
@@ -343,29 +354,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs</url>
-          <line>73</line>
-          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Services\EventService.cs" containingFunctionPresentation="Method 'PatchEventAsync'">
+          <line>54</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Services\EventService.cs" containingFunctionPresentation="Method 'UpdateEventAsync'">
             <startOffsets>
-              <option value="2645" />
+              <option value="1929" />
             </startOffsets>
             <endOffsets>
-              <option value="2670" />
+              <option value="1968" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/EventPilot.Application/Services/EventService.cs</url>
-          <line>68</line>
-          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Services\EventService.cs" containingFunctionPresentation="Method 'PatchEventAsync'">
-            <startOffsets>
-              <option value="2507" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2538" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

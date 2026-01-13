@@ -1,6 +1,8 @@
+using EventPilot.Application.Interfaces.ExternarServices;
 using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Infrastructure.Context;
 using EventPilot.Infrastructure.Repositories;
+using EventPilot.Infrastructure.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
@@ -19,7 +21,7 @@ public static class DependencyInjectionExtension
         
         //Repositories Here
         services.AddScoped<IEventRepository, EventRepository>();
-        
+        services.AddScoped<IPasswordHashService, PasswordHashService>();
         
         return services;
     }
