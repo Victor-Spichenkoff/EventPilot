@@ -2,6 +2,7 @@ using EventPilot.Application.DTOs.Event;
 using EventPilot.Application.DTOs.Responses;
 using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Application.Services;
+using EventPilot.Application.Validators.User;
 using EventPilot.Domain.Entities;
 using EventPilot.Domain.Exceptions;
 using Mapster;
@@ -11,19 +12,24 @@ namespace EventPilot.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class AuthController(EventService eventService) : ControllerBase
-// public class EventsController(EventService eventService) : ControllerBase
+public class AuthController(AuthService authService) : ControllerBase
 {
-    // private readonly EventService _eventService = eventService;
+    private readonly AuthService _authService = authService;
     
 
 
     // [ProducesResponseType(typeof(EventResponseDto), 200)]
-    // [HttpPost]
-    // public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] EventDto eventDto)
+    // [HttpPost("login")]
+    // public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] LoginDto loginDto)
     // {
-    //     return Ok(await _eventService.CreateEventAsync(eventDto));
+    //     return Ok(await _authService.Login(loginDto));
     // }
 
     
+    [ProducesResponseType(typeof(UserResponseDto), 200)]
+    [HttpPost("signin")]
+    public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] SignInDto loginDto)
+    {
+        return Ok(await _authService.CreateUser(loginDto));
+    }
 }

@@ -16,23 +16,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/ExternarServices/IPasswordHashService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/PasswordHashService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/IntegrationTests/ApiFactories/EventServiceApiFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/IntegrationTests/Helpers/Entities/Event.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/IntegrationTests/Services/EventPatchServiceTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/UserResponseDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDtoValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDtoValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Domain/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/LoginDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/SignInDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/IntegrationTests/ApiFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/IntegrationTests/ApiFactories/ApiFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UnitTests/Services/EventServiceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/Services/EventServiceTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +43,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ad1d58b8dd22123dfae3f2cf5d8b199992465c9c344d032f93a826d8e5539ff/RuntimeType.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ad8b2779652854276d03ec153d51377686c7193799d1688e119272770d0cf/EqualityAsserts.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bd1d5c50194fea68ff3559c160230b0ab50f5acf4ce3061bffd6d62958e2182/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/tests/IntegrationTests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -65,29 +58,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.EventPilot.API: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.RoomReservation.API: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.RoomReservation: http.executor&quot;: &quot;Run&quot;,
-    &quot;2e2f30d7-07bc-40c2-b17a-9feec346cc26.executor&quot;: &quot;Debug&quot;,
-    &quot;7aa648f5-62e3-403b-8805-b52e60166607.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;b61d3f1b-6524-4400-ac3e-96013ad0fce1.executor&quot;: &quot;Debug&quot;,
-    &quot;ef4be803-05d7-4f9c-b1c0-5397e08cf98c.executor&quot;: &quot;Debug&quot;,
-    &quot;f29c2ccc-a0e7-4123-b209-1bcf0765c6a6.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.EventPilot.API: http.executor": "Debug",
+    ".NET Launch Settings Profile.RoomReservation.API: http.executor": "Run",
+    ".NET Launch Settings Profile.RoomReservation: http.executor": "Run",
+    "2e2f30d7-07bc-40c2-b17a-9feec346cc26.executor": "Debug",
+    "7aa648f5-62e3-403b-8805-b52e60166607.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "b61d3f1b-6524-4400-ac3e-96013ad0fce1.executor": "Debug",
+    "ef4be803-05d7-4f9c-b1c0-5397e08cf98c.executor": "Debug",
+    "f29c2ccc-a0e7-4123-b209-1bcf0765c6a6.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.EventPilot.API: http">
     <configuration name="EventPilot.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" />
@@ -338,7 +331,8 @@
       <workItem from="1768179713362" duration="4108000" />
       <workItem from="1768226476786" duration="8066000" />
       <workItem from="1768254265707" duration="9245000" />
-      <workItem from="1768307026202" duration="10225000" />
+      <workItem from="1768307026202" duration="10998000" />
+      <workItem from="1768399017855" duration="1645000" />
     </task>
     <servers />
   </component>
@@ -364,6 +358,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Services\AuthService.cs" containingFunctionPresentation="Method 'CreateUser'">
+            <startOffsets>
+              <option value="910" />
+            </startOffsets>
+            <endOffsets>
+              <option value="947" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

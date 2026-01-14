@@ -48,7 +48,7 @@ public class EventBaseDtoValidator<T> : AbstractValidator<T>
             .NotEmpty().WithMessage("Inform a Start Date");
 
         RuleFor(x => x.EndDate)
-            .NotEmpty().NotNull().WithMessage("Inform a End Date");
+            .NotEmpty().NotNull().WithMessage("Inform an End Date");
         
         RuleFor(x => x.Status)
             .NotEmpty().WithMessage("Inform a Status");

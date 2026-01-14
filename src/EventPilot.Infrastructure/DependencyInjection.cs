@@ -21,6 +21,7 @@ public static class DependencyInjectionExtension
         
         //Repositories Here
         services.AddScoped<IEventRepository, EventRepository>();
+        services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IPasswordHashService, PasswordHashService>();
         
         return services;
