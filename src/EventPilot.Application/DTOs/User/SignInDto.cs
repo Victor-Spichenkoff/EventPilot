@@ -1,8 +1,8 @@
+using EventPilot.Application.DTOs.User;
+
 namespace EventPilot.Application.Validators.User;
 
-public class SignInDto
+public class SignInDto: BaseUserDto
 {
-    public required string Email { get; set; }
-    
-    public required string Password { get; set; }
+    public String? Name { get; set; }
 }

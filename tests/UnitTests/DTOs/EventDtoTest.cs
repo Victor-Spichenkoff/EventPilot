@@ -3,7 +3,7 @@ using EventPilot.Application.Validators.Event;
 using EventPilot.Domain.Enum;
 using Shouldly;
 
-namespace UnitTests.DTOs.Event;
+namespace UnitTests.DTOs;
 
 public class EventDtoTest
 {

@@ -1,11 +1,19 @@
+using EventPilot.Application.Extensions;
 using FluentValidation;
 
 namespace EventPilot.Application.Validators.User;
 
-// public class LoginDtoValidator: SignInDtoValidator
-// {
-//     public LoginDtoValidator()
-//     {
-//         
-//     }
-// }
+public class LoginDtoValidator: BaseUserValidator<LoginDto>
+{
+    public LoginDtoValidator()
+    {
+        RuleFor(x=> x.Password)
+            .IsRequired();
+
+        RuleFor(x => x.Email)
+            .IsRequired();
+        
+        ValidateEmail();
+        ValidatePassword();
+    }
+}
