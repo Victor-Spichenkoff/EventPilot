@@ -16,16 +16,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/UserResponseDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDtoValidator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDtoValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/BaseAuthDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/LoginDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/SignInDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/FluentValidationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/FluentValidationExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/UnitTests/ValueObjects/CodeTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/ValueObjects/CodeTest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.EventPilot.API: http.executor": "Debug",
+    ".NET Launch Settings Profile.EventPilot.API: http.executor": "Run",
     ".NET Launch Settings Profile.RoomReservation.API: http.executor": "Run",
     ".NET Launch Settings Profile.RoomReservation: http.executor": "Run",
     "2e2f30d7-07bc-40c2-b17a-9feec346cc26.executor": "Debug",
@@ -332,7 +331,7 @@
       <workItem from="1768226476786" duration="8066000" />
       <workItem from="1768254265707" duration="9245000" />
       <workItem from="1768307026202" duration="10998000" />
-      <workItem from="1768399017855" duration="1645000" />
+      <workItem from="1768399017855" duration="2774000" />
     </task>
     <servers />
   </component>

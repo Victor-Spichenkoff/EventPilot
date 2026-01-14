@@ -23,6 +23,6 @@ public class CodeTest
         var code1 = Code.GenerateRandom();
         var code2 = Code.GenerateRandom();
         
-        code1.ToString().ShouldBe(code2.ToString());
+        code1.ToString().ShouldNotBe(code2.ToString());
     }
 }

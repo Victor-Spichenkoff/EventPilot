@@ -1,5 +1,5 @@
 # ToDo
-
+- ORganizar o fluxo de validações do DTO
 
 - [ ] Create Event CRUD
 - [ ] Add Login System

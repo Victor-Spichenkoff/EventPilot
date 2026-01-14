@@ -2,7 +2,9 @@ using FluentValidation;
 
 namespace EventPilot.Application.Extensions;
 
-
+/// <summary>
+/// Default Error Message with format 'Inform a {PropertyName}'
+/// </summary>
 public static class FluentValidationExtensions
 {
     public static IRuleBuilderOptions<T, TProperty> IsRequired<T, TProperty>(
@@ -11,6 +13,7 @@ public static class FluentValidationExtensions
     {
         return ruleBuilder
             .NotNull()//TODO IS WORKING?
+            .WithMessage(message ?? "Inform a {PropertyName}")
             .NotEmpty()
             .WithMessage(message ?? "Inform a {PropertyName}");
     }

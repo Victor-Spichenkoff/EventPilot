@@ -20,7 +20,7 @@
     &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b61d3f1b_002D6524_002D4400_002Dac3e_002D96013ad0fce1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b61d3f1b_002D6524_002D4400_002Dac3e_002D96013ad0fce1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.DTOs.Event.EventDtoTest.Should_Pass_Fail_When_StartDate_Is_Invalid_In_Patch&lt;/TestId&gt;&#xD;
@@ -33,8 +33,6 @@
     &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest.Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f29c2ccc_002Da0e7_002D4123_002Db209_002D1bcf0765c6a6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::BD32A471-B81B-4E1F-A059-CFEA06966D07::net9.0::UnitTests.Services.EventServiceTest&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f29c2ccc_002Da0e7_002D4123_002Db209_002D1bcf0765c6a6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\tests\UnitTests" Presentation="&amp;lt;UnitTests&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

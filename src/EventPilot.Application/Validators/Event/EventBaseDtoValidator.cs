@@ -1,4 +1,5 @@
 using EventPilot.Application.DTOs.Event;
+using EventPilot.Application.Extensions;
 using FluentValidation;
 
 namespace EventPilot.Application.Validators.Event;
@@ -42,15 +43,27 @@ public class EventBaseDtoValidator<T> : AbstractValidator<T>
     protected void SetRequiredFieldsValidationOn()
     {
         RuleFor(x => x.Name)
-            .NotEmpty().WithMessage("Inform a name");
+            .IsRequired();
 
         RuleFor(x => x.StartDate)
-            .NotEmpty().WithMessage("Inform a Start Date");
+            .IsRequired("Inform a Start Date");
 
         RuleFor(x => x.EndDate)
-            .NotEmpty().NotNull().WithMessage("Inform an End Date");
+            .IsRequired("Inform an End Date");
         
         RuleFor(x => x.Status)
-            .NotEmpty().WithMessage("Inform a Status");
+            .IsRequired();
+        
+        // RuleFor(x => x.Name)
+        //     .NotEmpty().WithMessage("Inform a name");
+        //
+        // RuleFor(x => x.StartDate)
+        //     .NotEmpty().WithMessage("Inform a Start Date");
+        //
+        // RuleFor(x => x.EndDate)
+        //     .NotEmpty().NotNull().WithMessage("Inform an End Date");
+        //
+        // RuleFor(x => x.Status)
+        //     .NotEmpty().WithMessage("Inform a Status");
     }
 }
