@@ -17,7 +17,7 @@ public class PasswordHashService: IPasswordHashService
         return _hasher.HashPassword(null, password);
     }
 
-    public bool Verify(string password, string passwordHash)
+    public bool Verify(string? password, string passwordHash)
     {
         var result = _hasher.VerifyHashedPassword(
             null,

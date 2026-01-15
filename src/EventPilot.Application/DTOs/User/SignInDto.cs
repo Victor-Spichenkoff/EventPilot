@@ -4,5 +4,5 @@ namespace EventPilot.Application.Validators.User;
 
 public class SignInDto: BaseUserDto
 {
-    public String? Name { get; set; }
+    public string Name { get; set; }
 }

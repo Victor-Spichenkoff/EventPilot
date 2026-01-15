@@ -18,12 +18,12 @@ public class AuthController(AuthService authService) : ControllerBase
     
 
 
-    // [ProducesResponseType(typeof(EventResponseDto), 200)]
-    // [HttpPost("login")]
-    // public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] LoginDto loginDto)
-    // {
-    //     return Ok(await _authService.Login(loginDto));
-    // }
+    [ProducesResponseType(typeof(EventResponseDto), 200)]
+    [HttpPost("login")]
+    public async Task<ActionResult<bool>> CreateEvent([FromBody] LoginDto loginDto)
+    {
+        return Ok(await _authService.Login(loginDto));
+    }
 
     
     [ProducesResponseType(typeof(UserResponseDto), 200)]
