@@ -1,7 +1,0 @@
-[alias]
-  dev = checkout dev
-  push-dev = git push origin dev
-  main = checkout master
-  mdev = checkout master && git merge dev
-; Run at dev branch. Will Merge dev into master, push master, and go back to dev
-  deploy-dev= checkout master && git merge dev -m"Merge dev into master" && git push origin && git checkout dev

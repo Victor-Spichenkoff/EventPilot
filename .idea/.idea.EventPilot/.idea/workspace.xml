@@ -15,7 +15,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="" />
+    <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.gitconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,29 +52,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.EventPilot.API: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.RoomReservation.API: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.RoomReservation: http.executor&quot;: &quot;Run&quot;,
-    &quot;2e2f30d7-07bc-40c2-b17a-9feec346cc26.executor&quot;: &quot;Debug&quot;,
-    &quot;7aa648f5-62e3-403b-8805-b52e60166607.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;b61d3f1b-6524-4400-ac3e-96013ad0fce1.executor&quot;: &quot;Debug&quot;,
-    &quot;ef4be803-05d7-4f9c-b1c0-5397e08cf98c.executor&quot;: &quot;Debug&quot;,
-    &quot;f29c2ccc-a0e7-4123-b209-1bcf0765c6a6.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.EventPilot.API: http.executor": "Run",
+    ".NET Launch Settings Profile.RoomReservation.API: http.executor": "Run",
+    ".NET Launch Settings Profile.RoomReservation: http.executor": "Run",
+    "2e2f30d7-07bc-40c2-b17a-9feec346cc26.executor": "Debug",
+    "7aa648f5-62e3-403b-8805-b52e60166607.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "b61d3f1b-6524-4400-ac3e-96013ad0fce1.executor": "Debug",
+    "ef4be803-05d7-4f9c-b1c0-5397e08cf98c.executor": "Debug",
+    "f29c2ccc-a0e7-4123-b209-1bcf0765c6a6.executor": "Debug",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.EventPilot.API: http">
     <configuration name="EventPilot.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" />
