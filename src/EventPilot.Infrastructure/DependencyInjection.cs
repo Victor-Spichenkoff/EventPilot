@@ -19,10 +19,13 @@ public static class DependencyInjectionExtension
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlite(config.GetConnectionString("Default")));
         
+        services.Configure<JwtSettings>(config.GetSection("JwtSettings"));
+        
         //Repositories Here
         services.AddScoped<IEventRepository, EventRepository>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IPasswordHashService, PasswordHashService>();
+        services.AddScoped<ITokenService, TokenService>();
         
         return services;
     }

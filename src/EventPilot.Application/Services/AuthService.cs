@@ -5,15 +5,22 @@ using EventPilot.Application.Validators.User;
 using EventPilot.Domain.Entities;
 using EventPilot.Domain.Exceptions;
 using Mapster;
+using Microsoft.Extensions.Configuration;
 
 namespace EventPilot.Application.Services;
 
-public class AuthService(IPasswordHashService passwordHashService, IUserRepository userRepository)
+public class AuthService(
+    IPasswordHashService passwordHashService, 
+    IUserRepository userRepository,
+        ITokenService tokenService,
+    IConfiguration configuration)
 {
     private readonly IPasswordHashService _passwordHashService = passwordHashService;
+    private readonly ITokenService _tokenService = tokenService;
     private readonly IUserRepository _userRepository = userRepository;
+    private readonly IConfiguration _configuration = configuration;
 
-    public async Task<bool> Login(LoginDto loginDto)
+    public async Task<TokenResponse> Login(LoginDto loginDto)
     {
         var user = await _userRepository.GetUserByEmail(loginDto.Email);
         if (user is null)
@@ -22,8 +29,15 @@ public class AuthService(IPasswordHashService passwordHashService, IUserReposito
         if(!_passwordHashService.Verify(loginDto.Password,user.Password))
             throw new BusinessException("Invalid password");
         
+        var token = _tokenService.GenerateToken(user);
+        var expiresInHours = _configuration["JwtSettings:ExpirationHours"] ?? "0";
+        var expiresAt = DateTime.Now.AddHours(Double.Parse(expiresInHours));
         
-        return true;
+        return new TokenResponse()
+        {
+            Token = token,
+            ExpiresAt = expiresAt,
+        };
     }
 
 
