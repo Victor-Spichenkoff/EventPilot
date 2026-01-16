@@ -14,9 +14,9 @@ public class AuthController(AuthService authService) : ControllerBase
     
 
 
-    [ProducesResponseType(typeof(UserResponseDto), 200)]
+    [ProducesResponseType(typeof(TokenResponse), 200)]
     [HttpPost("login")]
-    public async Task<ActionResult<bool>> CreateEvent([FromBody] LoginDto loginDto)
+    public async Task<ActionResult<TokenResponse>> CreateEvent([FromBody] LoginDto loginDto)
     {
         return Ok(await _authService.Login(loginDto));
     }
@@ -31,7 +31,7 @@ public class AuthController(AuthService authService) : ControllerBase
     
     
     
-    [ProducesResponseType(typeof(UserResponseDto), 200)]
+    [ProducesResponseType(typeof(string), 200)]
     [HttpPatch("password/{userId}")]
     public async Task<ActionResult<EventResponseDto>> UpdatePassword([FromBody] UpdateUserPasswordDto updateUserPasswordDto, long userId)
     {

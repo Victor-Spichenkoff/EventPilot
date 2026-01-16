@@ -1,12 +1,14 @@
 # ToDo
-- [ ] NOVAS 2
+- [ ] Claims?
+- [ ] Secret no env, como?
+- [ ] Mais detalhes do token e padrões a se seguir
+- [ ]
 
 - [ ] Create Event CRUD
 - [ ] Add Login System
 - [ ] Add Guard to Event CRUD
 - [ ] 
 - [ ] 
-
 
 # Migrations
 - Open ./src
