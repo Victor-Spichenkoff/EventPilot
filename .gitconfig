@@ -1,0 +1,5 @@
+[alias]
+  dev = checkout dev
+  main = checkout master
+  mdev = checkout master && git merge dev
+  deploy_dev= checkout master && git merge dev && git push origin && git checkout dev

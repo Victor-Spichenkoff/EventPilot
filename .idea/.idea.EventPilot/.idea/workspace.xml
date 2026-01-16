@@ -15,21 +15,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/BaseUserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/BaseUserDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/Validations/FluentValidationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/Validations/FluentValidationExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDtoValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDtoValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/UpdateUserPasswordDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/UpdateUserPasswordDtoValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" afterDir="false" />
-    </list>
+    <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -341,7 +327,7 @@
       <workItem from="1768426796067" duration="5241000" />
       <workItem from="1768491265727" duration="1620000" />
       <workItem from="1768512649507" duration="3551000" />
-      <workItem from="1768568992427" duration="696000" />
+      <workItem from="1768568992427" duration="1558000" />
     </task>
     <servers />
   </component>
