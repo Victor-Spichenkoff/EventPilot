@@ -1,5 +1,5 @@
 # ToDo
-- [ ] NOVAS
+- [ ] NOVAS 2
 
 - [ ] Create Event CRUD
 - [ ] Add Login System
