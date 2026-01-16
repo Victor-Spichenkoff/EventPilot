@@ -19,7 +19,11 @@ public static class AddPresentationExtension
         services.AddModelStateConfiguration();
         
         services.AddEndpointsApiExplorer(); 
-        services.AddSwaggerGen();
+        services.AddSwaggerGen(c =>
+        {
+            c.EnableAnnotations();
+            // c.UseAllOfToExtendReferenceSchemas();
+        });
         
         services.AddMapster();
         services.AddMapping(); // My mapping config

@@ -17,6 +17,7 @@ public static class DependencyInjectionExtension
         services.AddScoped<EventService>();
         services.AddScoped<AuthService>();
         
+        
         // it already registers all Validator from same assembly (application)
         services.AddValidatorsFromAssemblyContaining<CreateEventDtoValidator>();
         // services.AddValidatorsFromAssemblyContaining<UpdateEventDtoValidator>();

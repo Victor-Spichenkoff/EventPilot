@@ -1,11 +1,7 @@
-using EventPilot.Application.DTOs.Event;
 using EventPilot.Application.DTOs.Responses;
-using EventPilot.Application.Interfaces.Repositories;
+using EventPilot.Application.DTOs.User;
 using EventPilot.Application.Services;
 using EventPilot.Application.Validators.User;
-using EventPilot.Domain.Entities;
-using EventPilot.Domain.Exceptions;
-using Mapster;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventPilot.Controllers;
@@ -18,7 +14,7 @@ public class AuthController(AuthService authService) : ControllerBase
     
 
 
-    [ProducesResponseType(typeof(EventResponseDto), 200)]
+    [ProducesResponseType(typeof(UserResponseDto), 200)]
     [HttpPost("login")]
     public async Task<ActionResult<bool>> CreateEvent([FromBody] LoginDto loginDto)
     {
@@ -31,5 +27,15 @@ public class AuthController(AuthService authService) : ControllerBase
     public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] SignInDto loginDto)
     {
         return Ok(await _authService.CreateUser(loginDto));
+    }
+    
+    
+    
+    [ProducesResponseType(typeof(UserResponseDto), 200)]
+    [HttpPatch("password/{userId}")]
+    public async Task<ActionResult<EventResponseDto>> UpdatePassword([FromBody] UpdateUserPasswordDto updateUserPasswordDto, long userId)
+    {
+        await _authService.UpdateUserPassword(userId, updateUserPasswordDto);
+        return Ok("Password updated");
     }
 }

@@ -1,5 +1,6 @@
 using EventPilot.Application.DTOs.User;
 using EventPilot.Application.Extensions;
+using EventPilot.Application.Extensions.Validations;
 using FluentValidation;
 
 namespace EventPilot.Application.Validators.User;
@@ -17,7 +18,8 @@ public class UpdateUserPasswordValidator: AbstractValidator<UpdateUserPasswordDt
             .IsRequired("Inform a new password");
 
         RuleFor(x => x.ConfirmNewPassword)
-            .PasswordRules("Confirm new password")
+            .PasswordRules("New password confirmation")
+            .Equal(x => x.ConfirmNewPassword).WithMessage("New password confirmation must be equals to password")
             .IsRequired("Inform a new password confirmation");
     }
 }

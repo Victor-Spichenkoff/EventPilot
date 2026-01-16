@@ -16,25 +16,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/UsersController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/UpdateUserPasswordDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/Validations/UserEmailValidationExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/Validations/UserPasswordValidationExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/UpdateUserPasswordDtoValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/BaseUserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/BaseUserDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/PatchUserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/PatchUserDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/SignInDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/SignInDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/FluentValidationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/Validations/FluentValidationExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/ExternarServices/IPasswordHashService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/ExternarServices/IPasswordHashService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/DependencyInjection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/EventPilot.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/Validations/FluentValidationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Extensions/Validations/FluentValidationExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/BaseUserValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/BaseUserValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/PatchUserDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/PatchUserDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/Event/EventBaseDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/LoginDtoValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/SignInDtoValidator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/PasswordHashService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/PasswordHashService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/UnitTests/DTOs/AuthDtosTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/tests/UnitTests/DTOs/AuthDtosTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/UpdateUserPasswordDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Validators/User/UpdateUserPasswordDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Data/dev.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +338,10 @@
       <workItem from="1768254265707" duration="9245000" />
       <workItem from="1768307026202" duration="10998000" />
       <workItem from="1768399017855" duration="8150000" />
-      <workItem from="1768426796067" duration="4622000" />
+      <workItem from="1768426796067" duration="5241000" />
+      <workItem from="1768491265727" duration="1620000" />
+      <workItem from="1768512649507" duration="3551000" />
+      <workItem from="1768568992427" duration="696000" />
     </task>
     <servers />
   </component>
@@ -370,19 +367,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs</url>
-          <line>37</line>
-          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Application\Services\AuthService.cs" containingFunctionPresentation="Method 'CreateUser'">
-            <startOffsets>
-              <option value="1347" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1384" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

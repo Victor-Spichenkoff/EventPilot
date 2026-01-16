@@ -1,4 +1,5 @@
 using EventPilot.Application.Extensions;
+using EventPilot.Application.Extensions.Validations;
 using FluentValidation;
 
 namespace EventPilot.Application.Validators.User;

@@ -36,9 +36,11 @@ public class UserRepository(AppDbContext context): IUserRepository
         return createdUser.Entity;
     }
 
-    public Task<User> UpdateAsync(User user)
+    public async Task<User> UpdateAsync(User user)
     {
-        throw new NotImplementedException();
+        var updatedUser = _context.Users.Update(user);
+        await _context.SaveChangesAsync();
+        return updatedUser.Entity;
     }
 
     public Task<bool> DeleteByIdAsync(User user)
