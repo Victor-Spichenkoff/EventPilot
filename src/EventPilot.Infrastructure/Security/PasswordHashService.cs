@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace EventPilot.Infrastructure.Security;
 
-public class PasswordHashService: IPasswordHashService
+public class PasswordHashService : IPasswordHashService
 {
     private readonly PasswordHasher<object> _hasher;
 
@@ -14,15 +14,15 @@ public class PasswordHashService: IPasswordHashService
 
     public string Hash(string password)
     {
-        return _hasher.HashPassword(null, password);
+        return _hasher.HashPassword(null!, password);
     }
 
     public bool Verify(string? password, string passwordHash)
     {
         var result = _hasher.VerifyHashedPassword(
-            null,
+            null!,
             passwordHash,
-            password
+            password ?? ""
         );
 
         return result == PasswordVerificationResult.Success;
