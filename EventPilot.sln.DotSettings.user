@@ -35,5 +35,8 @@
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f29c2ccc_002Da0e7_002D4123_002Db209_002D1bcf0765c6a6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Should_Keep_Entity_Unchanged_When_All_Fields_Are_Null #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\tests\UnitTests" Presentation="&amp;lt;UnitTests&amp;gt;" /&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Project Location="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\tests\UnitTests" Presentation="&amp;lt;UnitTests&amp;gt;" /&gt;&#xD;
+    &lt;Project Location="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\tests\IntegrationTests" Presentation="&amp;lt;IntegrationTests&amp;gt;" /&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

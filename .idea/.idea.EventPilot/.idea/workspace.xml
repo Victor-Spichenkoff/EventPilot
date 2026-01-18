@@ -16,18 +16,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/DTOs/User/TokenResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Application/Interfaces/ExternarServices/ITokenService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/JwtSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/TokenService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddModelStateConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddModelStateConfiguration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Application/Services/AuthService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/EventPilot.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/EventPilot.Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/JwtSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/JwtSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/PasswordHashService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/PasswordHashService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/TokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/TokenService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +46,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f9878f643c2ecf1b4ce73234de56c9754a451c835620eae85ca8babbcb5889c4/LateBoundTestFramework.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -62,29 +57,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.EventPilot.API: http.executor": "Run",
-    ".NET Launch Settings Profile.RoomReservation.API: http.executor": "Run",
-    ".NET Launch Settings Profile.RoomReservation: http.executor": "Run",
-    "2e2f30d7-07bc-40c2-b17a-9feec346cc26.executor": "Debug",
-    "7aa648f5-62e3-403b-8805-b52e60166607.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "b61d3f1b-6524-4400-ac3e-96013ad0fce1.executor": "Debug",
-    "ef4be803-05d7-4f9c-b1c0-5397e08cf98c.executor": "Debug",
-    "f29c2ccc-a0e7-4123-b209-1bcf0765c6a6.executor": "Debug",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.EventPilot.API: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.RoomReservation.API: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.RoomReservation: http.executor&quot;: &quot;Run&quot;,
+    &quot;2e2f30d7-07bc-40c2-b17a-9feec346cc26.executor&quot;: &quot;Debug&quot;,
+    &quot;7aa648f5-62e3-403b-8805-b52e60166607.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;b61d3f1b-6524-4400-ac3e-96013ad0fce1.executor&quot;: &quot;Debug&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;ef4be803-05d7-4f9c-b1c0-5397e08cf98c.executor&quot;: &quot;Debug&quot;,
+    &quot;f29c2ccc-a0e7-4123-b209-1bcf0765c6a6.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.EventPilot.API: http">
     <configuration name="EventPilot.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" />
@@ -342,6 +338,9 @@
       <workItem from="1768512649507" duration="3551000" />
       <workItem from="1768568992427" duration="1558000" />
       <workItem from="1768598335235" duration="5017000" />
+      <workItem from="1768652122610" duration="7381000" />
+      <workItem from="1768686607849" duration="1925000" />
+      <workItem from="1768688584172" duration="2170000" />
     </task>
     <servers />
   </component>
@@ -368,19 +367,6 @@
           </properties>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/TokenService.cs</url>
-          <line>25</line>
-          <properties documentPath="C:\Users\Pichau\Projects\RoomReservation\RoomReservation\src\EventPilot.Infrastructure\Security\TokenService.cs" containingFunctionPresentation="Method 'GenerateToken'">
-            <startOffsets>
-              <option value="813" />
-            </startOffsets>
-            <endOffsets>
-              <option value="912" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -388,5 +374,9 @@
         <watch expression="this.&lt;eventToUpdate&gt;5__1.Status" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
