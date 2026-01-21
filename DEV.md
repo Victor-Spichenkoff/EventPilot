@@ -1,8 +1,6 @@
 # ToDo
-- [ ] Claims?
 - [ ] Secret no env, como?
-- [ ] Mais detalhes do token e padrões a se seguir
-- [ ]
+- [ ] Testar em prod se ainda funciona
 
 - [ ] Create Event CRUD
 - [ ] Add Login System
