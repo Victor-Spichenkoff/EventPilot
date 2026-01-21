@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using EventPilot.Infrastructure.Security;
 using Mapster;
 
 namespace EventPilot.Extensions;
@@ -14,19 +15,27 @@ public static class AddPresentationExtension
             .AddJsonOptions(options =>
             {
                 options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-            }); 
-        
+            });
+
         services.AddModelStateConfiguration();
-        
-        services.AddEndpointsApiExplorer(); 
+
+        services.AddEndpointsApiExplorer();
         services.AddSwaggerGen(c =>
         {
             c.EnableAnnotations();
             // c.UseAllOfToExtendReferenceSchemas();
         });
-        
+
         services.AddMapster();
         services.AddMapping(); // My mapping config
+
+
+        // Validation
+        services
+            .AddOptions<JwtSettings>()
+            .BindConfiguration("Jwt")
+            .Validate(o => !string.IsNullOrEmpty(o.Secret), "JWT Secret must be provided")
+            .ValidateOnStart();
 
         return services;
     }

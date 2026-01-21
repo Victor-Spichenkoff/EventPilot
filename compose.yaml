@@ -14,4 +14,5 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"
       ConnectionStrings__Default: "Server=db;Database=Room;User=sa;Password=Pass123!;"
-      
+    env_file:
+      - .env

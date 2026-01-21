@@ -16,13 +16,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddModelStateConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddModelStateConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/EventPilot.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Extensions/AddPresentation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EventPilot.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/JwtSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/JwtSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/PasswordHashService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/PasswordHashService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/TokenService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/Security/TokenService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,6 +345,8 @@
       <workItem from="1768652122610" duration="7381000" />
       <workItem from="1768686607849" duration="1925000" />
       <workItem from="1768688584172" duration="2170000" />
+      <workItem from="1768840987062" duration="2439000" />
+      <workItem from="1768997631463" duration="5708000" />
     </task>
     <servers />
   </component>
