@@ -20,7 +20,6 @@ public static class DependencyInjectionExtension
             options.UseSqlite(config.GetConnectionString("Default")));
 
 
-
         //Repositories Here
         services.AddScoped<IEventRepository, EventRepository>();
         services.AddScoped<IUserRepository, UserRepository>();

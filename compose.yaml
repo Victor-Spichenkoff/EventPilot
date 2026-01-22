@@ -1,11 +1,6 @@
-﻿#services:
-#  roomreservation:
-#    image: roomreservation
-#    build:
-#      context: .
-#      dockerfile: src/RoomReservation.API/Dockerfile
-services:
+﻿services:
   api:
+    container_name: EventPilotContainer
     build:
       context: .
       dockerfile: src/EventPilot.API/Dockerfile
@@ -13,6 +8,8 @@ services:
       - "8080:8080"
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"
-      ConnectionStrings__Default: "Server=db;Database=Room;User=sa;Password=Pass123!;"
+      ConnectionStrings__Default: Data Source=/app/Data/prod.db
     env_file:
       - .env
+    volumes:
+      - ./src/EventPilot.Infrastructure/Data:/app/Data
