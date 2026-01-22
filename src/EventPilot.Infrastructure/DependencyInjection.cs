@@ -16,8 +16,15 @@ public static class DependencyInjectionExtension
             IConfiguration config
         )
     {
+        Console.WriteLine("==================\n\n\n");
+        Console.WriteLine(config.GetConnectionString("Default"));
+        Console.WriteLine("==================\n\n\n");
+
+
+
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlite(config.GetConnectionString("Default")));
+
 
 
         //Repositories Here
