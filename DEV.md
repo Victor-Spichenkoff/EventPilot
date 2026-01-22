@@ -1,4 +1,7 @@
 # ToDo
+- [ ]  "detail": "Something went wrong", -> DEPLOY, ao fazer login
+  - Pode ser string de conexão com db
+
 - [ ] Secret no env, como?
 - [ ] Testar em prod se ainda funciona
 
