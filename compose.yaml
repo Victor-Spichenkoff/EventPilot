@@ -9,9 +9,10 @@
     environment:
       ASPNETCORE_ENVIRONMENT: "Production"
 #      ConnectionStrings__Default: Data Source=/app/Data/prod.db
-      ConnectionStrings__Default: Data Source=/app/prod.db;Mode=ReadWrite
+      ConnectionStrings__Default: Data Source=/app/data/prod.db
     env_file:
       - .env
-    volumes:
-      - ./src/EventPilot.Infrastructure/Data:/app
+#    volumes:
+#      - ./src/EventPilot.Infrastructure/Data:/app/Data/
+#      - ./src/EventPilot.Infrastructure/Data:/app
 

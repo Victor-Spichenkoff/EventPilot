@@ -9,7 +9,7 @@ namespace EventPilot.Infrastructure.Repositories;
 public class UserRepository(AppDbContext context): IUserRepository
 {
     private readonly AppDbContext _context = context;
-   
+
 
     public User? GetByIdUser(long id)
     {
@@ -32,7 +32,7 @@ public class UserRepository(AppDbContext context): IUserRepository
         var isSuccess = await _context.SaveChangesAsync() > 0;
         if (!isSuccess)
             throw new InternalServerException("Can't create user");
-        
+
         return createdUser.Entity;
     }
 

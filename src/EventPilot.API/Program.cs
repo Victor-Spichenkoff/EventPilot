@@ -1,6 +1,7 @@
 using EventPilot.Application;
 using EventPilot.Extensions;
 using EventPilot.Infrastructure;
+using EventPilot.Infrastructure.Seed;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,8 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 
 var app = builder.Build();
+
+// app.RunMigrations();
 
 app.UseMiddlewares();
 
