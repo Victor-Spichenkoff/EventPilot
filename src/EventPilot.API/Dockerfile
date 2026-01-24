@@ -33,7 +33,7 @@ RUN mkdir -p /app/Data \
 
 #COPY --from=publish /app/publish .
 
-<THIS IS NEW>
+#<THIS IS NEW>
 RUN mkdir -p /app/Data \
     && chown -R app:app /app/Data \
     && chmod -R 775 /app/Data
@@ -47,7 +47,7 @@ RUN chown app:app /app/Data/prod.db \
     && chmod 664 /app/Data/prod.db
 
 USER app
-</THIS IS NEW>
+#</THIS IS NEW>
 
 ENTRYPOINT ["dotnet", "EventPilot.API.dll"]
 
