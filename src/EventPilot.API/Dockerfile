@@ -31,23 +31,23 @@ WORKDIR /app
 RUN mkdir -p /app/Data \
     && chown -R app:app /app/Data
 
+#COPY --from=publish /app/publish .
+
+<THIS IS NEW>
+RUN mkdir -p /app/Data \
+    && chown -R app:app /app/Data \
+    && chmod -R 775 /app/Data
+
 COPY --from=publish /app/publish .
 
-#<THIS IS NEW>
-#RUN mkdir -p /app/Data \
-#    && chown -R app:app /app/Data \
-#    && chmod -R 775 /app/Data
-#
-#COPY --from=publish /app/publish .
-#
-## ADD DB TO RUN TIME
-#COPY src/EventPilot.Infrastructure/Data/prod.db /app/Data/prod.db
-#
-#RUN chown app:app /app/Data/prod.db \
-#    && chmod 664 /app/Data/prod.db
-#
-#USER app
-#</THIS IS NEW>
+# ADD DB TO RUN TIME
+COPY src/EventPilot.Infrastructure/Data/prod.db /app/Data/prod.db
+
+RUN chown app:app /app/Data/prod.db \
+    && chmod 664 /app/Data/prod.db
+
+USER app
+</THIS IS NEW>
 
 ENTRYPOINT ["dotnet", "EventPilot.API.dll"]
 
