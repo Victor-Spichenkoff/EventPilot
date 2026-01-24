@@ -1,4 +1,7 @@
 # ToDo
+- Agora está dando erro sem nem precisar do docker, aplicação normal falha
+
+
 - [ ]  "detail": "Something went wrong", -> DEPLOY, ao fazer login
   - Pode ser string de conexão com db
 - [ ] Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 14: 'unable to open database file'.

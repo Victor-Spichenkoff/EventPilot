@@ -1,11 +1,17 @@
 using EventPilot.Application.Interfaces.ExternarServices;
 using EventPilot.Application.Interfaces.Repositories;
 using EventPilot.Infrastructure.Context;
+using EventPilot.Infrastructure.Helpers;
 using EventPilot.Infrastructure.Repositories;
 using EventPilot.Infrastructure.Security;
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Logging;
+using LogHelper = EventPilot.Infrastructure.Helpers.LogHelper;
+
 
 namespace EventPilot.Infrastructure;
 
@@ -13,8 +19,8 @@ public static class DependencyInjectionExtension
 {
     public static IServiceCollection AddInfrastructure(
         this IServiceCollection services,
-            IConfiguration config
-        )
+        IConfiguration config
+    )
     {
         Console.WriteLine("==================\n\n\n");
         Console.WriteLine(config.GetConnectionString("Default"));
@@ -24,8 +30,6 @@ public static class DependencyInjectionExtension
 
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlite(config.GetConnectionString("Default")));
-
-
 
         //Repositories Here
         services.AddScoped<IEventRepository, EventRepository>();

@@ -16,8 +16,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b685875e-fbae-4517-b44a-aebd943bfc48" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventPilot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RoomReservation/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DEV.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEV.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EventPilot.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.API/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.API/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventPilot.Infrastructure/DependencyInjection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
