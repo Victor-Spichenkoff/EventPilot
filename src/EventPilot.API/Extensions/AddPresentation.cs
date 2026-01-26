@@ -11,6 +11,10 @@ public static class AddPresentationExtension
 {
     public static IServiceCollection AddPresentation(this IServiceCollection services)
     {
+        // Auth
+        services.AddAuth();
+
+
         services.AddControllers()
             .AddJsonOptions(options =>
             {
@@ -19,12 +23,6 @@ public static class AddPresentationExtension
 
         services.AddModelStateConfiguration();
 
-        services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen(c =>
-        {
-            c.EnableAnnotations();
-            // c.UseAllOfToExtendReferenceSchemas();
-        });
 
         services.AddMapster();
         services.AddMapping(); // My mapping config
@@ -36,6 +34,7 @@ public static class AddPresentationExtension
             .BindConfiguration("Jwt")
             .Validate(o => !string.IsNullOrEmpty(o.Secret), "JWT Secret must be provided")
             .ValidateOnStart();
+
 
         return services;
     }
