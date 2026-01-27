@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EventPilot.Controllers;
 
+
+[Authorize]
 [ApiController]
 [Route("[controller]")]
 public class AuthController(AuthService authService) : ControllerBase
@@ -16,7 +18,7 @@ public class AuthController(AuthService authService) : ControllerBase
     private readonly AuthService _authService = authService;
 
 
-
+    [AllowAnonymous]
     [ProducesResponseType(typeof(TokenResponse), 200)]
     [HttpPost("login")]
     public async Task<ActionResult<TokenResponse>> CreateEvent([FromBody] LoginDto loginDto)
@@ -24,7 +26,7 @@ public class AuthController(AuthService authService) : ControllerBase
         return Ok(await _authService.Login(loginDto));
     }
 
-
+    [AllowAnonymous]
     [ProducesResponseType(typeof(UserResponseDto), 200)]
     [HttpPost("signin")]
     public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] SignInDto loginDto)
@@ -33,9 +35,9 @@ public class AuthController(AuthService authService) : ControllerBase
     }
 
 
-    [Authorize]
+
     [ProducesResponseType(typeof(string), 200)]
-    [HttpPatch("password/{userId}")]
+    [HttpPatch("password")]
     // [HttpPatch("password/{userId}")]
     // public async Task<ActionResult<EventResponseDto>> UpdatePassword([FromBody] UpdateUserPasswordDto updateUserPasswordDto, long userId)
     public async Task<ActionResult<EventResponseDto>> UpdatePassword([FromBody] UpdateUserPasswordDto updateUserPasswordDto)

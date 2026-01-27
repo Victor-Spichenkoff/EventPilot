@@ -6,7 +6,7 @@ using EventPilot.Infrastructure.Seed;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddPresentation();
+builder.Services.AddPresentation(builder);
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
 
@@ -22,10 +22,12 @@ if (!app.Environment.IsDevelopment())
 app.UseMiddlewares();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwaggerDocumentation();
-}
+// if (app.Environment.IsDevelopment())
+// {
+
+app.UseMySwaggerDocumentation();
+
+// }
 
 
 app.UseHttpsRedirection();

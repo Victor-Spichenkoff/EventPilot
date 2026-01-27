@@ -9,10 +9,11 @@ namespace EventPilot.Extensions;
  */
 public static class AddPresentationExtension
 {
-    public static IServiceCollection AddPresentation(this IServiceCollection services)
+    public static IServiceCollection AddPresentation(this IServiceCollection services, WebApplicationBuilder builder
+        )
     {
         // Auth
-        services.AddAuth();
+        services.AddAuth(builder.Configuration);
 
 
         services.AddControllers()

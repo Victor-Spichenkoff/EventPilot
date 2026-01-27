@@ -1,6 +1,9 @@
 # ToDo
-
-
+- [ ] Persist token
+- [ ] Not validate the token (JWT) ERROR
+  - Bearer error="invalid_token",error_description="The issuer '' is invalid"
+  - nunca 
+- [ ] 
 - [ ] Testar em prod se ainda funciona
 
 - [ ] Create Event CRUD
