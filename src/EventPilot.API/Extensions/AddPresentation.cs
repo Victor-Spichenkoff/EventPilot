@@ -23,6 +23,8 @@ public static class AddPresentationExtension
 
         services.AddModelStateConfiguration();
 
+        services.AddSwagger();
+
 
         services.AddMapster();
         services.AddMapping(); // My mapping config
