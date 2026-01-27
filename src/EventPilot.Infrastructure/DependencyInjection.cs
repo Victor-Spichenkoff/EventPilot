@@ -22,7 +22,7 @@ public static class DependencyInjectionExtension
         IConfiguration config
     )
     {
-        Console.WriteLine("==================\n\n\n");
+        Console.WriteLine("==================");
         Console.WriteLine(config.GetConnectionString("Default"));
         Console.WriteLine("==================\n\n\n");
 
