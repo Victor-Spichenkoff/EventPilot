@@ -13,15 +13,19 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
-app.RunMigrations();
+if (!app.Environment.IsDevelopment())
+{
+    app.RunMigrations();
+}
+
 
 app.UseMiddlewares();
 
 // Configure the HTTP request pipeline.
-// if (app.Environment.IsDevelopment())
-// {
+if (app.Environment.IsDevelopment())
+{
     app.UseSwaggerDocumentation();
-// }
+}
 
 
 app.UseHttpsRedirection();
@@ -33,5 +37,6 @@ app.MapControllers();
 app.Run();
 
 
-
-public abstract partial class Program { }
+public abstract partial class Program
+{
+}
