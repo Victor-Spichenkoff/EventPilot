@@ -1,6 +1,5 @@
 using Microsoft.OpenApi;
 
-
 namespace EventPilot.Extensions;
 
 public static class AddSwaggerExtension
@@ -22,7 +21,7 @@ public static class AddSwaggerExtension
             //     In = ParameterLocation.Header,
             //     Description = "Informe o token JWT no formato: Bearer {seu_token}"
             // });
-            //
+
             // c.AddSecurityRequirement(document =>
             //     new OpenApiSecurityRequirement
             //     {
