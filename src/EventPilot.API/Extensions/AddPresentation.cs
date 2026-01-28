@@ -34,7 +34,7 @@ public static class AddPresentationExtension
         // Validation
         services
             .AddOptions<JwtSettings>()
-            .BindConfiguration("Jwt")
+            .BindConfiguration("JwtSettings")
             .Validate(o => !string.IsNullOrEmpty(o.Secret), "JWT Secret must be provided")
             .ValidateOnStart();
 

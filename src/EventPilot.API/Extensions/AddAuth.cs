@@ -10,7 +10,7 @@ public static class AddAuthExtension
         this IServiceCollection services,
         IConfiguration configuration)
     {
-        var secret = configuration["Jwt:Secret"];
+        var secret = configuration["JwtSettings:Secret"];
         if(secret is null || secret.Length < 32)
             throw new ArgumentException("Invalid JWT secret.");
 
