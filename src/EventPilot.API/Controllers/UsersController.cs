@@ -6,10 +6,12 @@ using EventPilot.Application.Services;
 using EventPilot.Domain.Entities;
 using EventPilot.Domain.Exceptions;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EventPilot.Controllers;
+
 
 [ApiController]
 [Route("[controller]")]
@@ -27,16 +29,16 @@ public class UsersController
     // => Ok(await _eventService.GetEventAsync(id));
     //
 
-    
+
     // [ProducesResponseType(typeof(EventResponseDto), 200)]
     // [HttpPost]
     // public async Task<ActionResult<EventResponseDto>> CreateEvent([FromBody] EventDto eventDto)
     // {
     //     return Ok(await _eventService.CreateEventAsync(eventDto));
     // }
-    
 
-    
+
+
     [ProducesResponseType(typeof(EventResponseDto), 200)]
     [HttpPatch("{id}")]
     public string PatchUser([FromBody] PatchUserDto userDto, long id)
@@ -55,5 +57,5 @@ public class UsersController
     //     await _eventService.DeleteEventAsync(id);
     //     return NoContent();
     // }
-    
+
 }

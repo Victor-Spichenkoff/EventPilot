@@ -9,8 +9,13 @@ namespace EventPilot.Extensions;
  */
 public static class AddPresentationExtension
 {
-    public static IServiceCollection AddPresentation(this IServiceCollection services)
+    public static IServiceCollection AddPresentation(this IServiceCollection services, WebApplicationBuilder builder
+        )
     {
+        // Auth
+        services.AddAuth(builder.Configuration);
+
+
         services.AddControllers()
             .AddJsonOptions(options =>
             {
@@ -19,12 +24,8 @@ public static class AddPresentationExtension
 
         services.AddModelStateConfiguration();
 
-        services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen(c =>
-        {
-            c.EnableAnnotations();
-            // c.UseAllOfToExtendReferenceSchemas();
-        });
+        services.AddSwagger();
+
 
         services.AddMapster();
         services.AddMapping(); // My mapping config
@@ -33,9 +34,10 @@ public static class AddPresentationExtension
         // Validation
         services
             .AddOptions<JwtSettings>()
-            .BindConfiguration("Jwt")
+            .BindConfiguration("JwtSettings")
             .Validate(o => !string.IsNullOrEmpty(o.Secret), "JWT Secret must be provided")
             .ValidateOnStart();
+
 
         return services;
     }
